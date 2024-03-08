@@ -1,4 +1,156 @@
+/* work sans font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+/* shared styles */
+* {
     font-family: "Work Sans", sans-serif;
+}
+
+/* button styles */
+.btn-primary {
+    cursor: pointer;
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 50px;
+}
+
+/* header styles start */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 200px;
+}
+
+/* navbar styles start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--Dark-02, #424242);
+}
+
+/* banner styles start */
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    ;
+}
+
+/* tablet or medium devices */
+@media screen and(min-width: 576px) and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+    }
+
+}
+
+/* main styles */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* teams styles */
+.teams-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.teams-content {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.teams-title {
+    color: var(--Dark-03, #727272);
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.of-our {
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.Features {
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.teams-description {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
